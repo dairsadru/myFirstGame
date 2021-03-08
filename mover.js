@@ -17,22 +17,22 @@ let mover = {
     },
     getNewPossition(event) {
         switch (event.key) {
-            case "mouseup":
+            case "ArrowUp":
                 return {
                     x: player.x,
                         y: player.y - 1
                 };
-            case "mouseDown":
+            case "ArrowDown":
                 return {
                     x: player.x,
                         y: player.y + 1
                 };
-            case "mouseLeft":
+            case "ArrowLeft":
                 return {
                     x: player.x - 1,
                         y: player.y
                 };
-            case "mouseRight":
+            case "ArrowRight":
                 return {
                     x: player.x + 1,
                         y: player.y
